@@ -217,7 +217,8 @@
         </div>      
       {% endif %}
       <div class="title">
-        <span>{{ product.title }}</span>
+        <span style="font-weight: bold;">{{ product.title }}</span>
+        <span class="size">{{ product.metafields.my_fields.farg }}</span>
         <span class="size">{{ product.metafields.my_fields.storlek }}</span>
       </div>
       {% if show_vendor %}
