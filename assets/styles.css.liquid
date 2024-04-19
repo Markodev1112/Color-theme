@@ -5798,6 +5798,7 @@ body.cc-popup-no-scroll-pad-right .site-control.fixed {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #111;
 }
 .site-control .site-control__inner a, .site-control .site-control__inner .disclosure__toggle {
   pointer-events: auto;
@@ -10351,6 +10352,7 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 .product-area .product-area__details .product-title {
   margin: {{ edge_gutter | divided_by: 2 }}px 0 0;
   text-align: left;
+  padding-left: 5px;
 }
 .product-area .product-area__details .unit-price {
   font-style: normal;
@@ -10387,6 +10389,7 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 }
 .product-area .product-area__details .product-policies p {
   margin: 0;
+  font-size: 14px;
 }
 .product-area .product-area__details .sku {
   font-size: 0.8em;
@@ -14991,6 +14994,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  padding-bottom: 0px;
 }
 .price.custom-price .theme-money {
   font-size: 16px;
@@ -15028,7 +15032,7 @@ body {
 .custom-price .price-wrapper {
   width: 60%;
   text-align: left;
-  padding: 6px;
+  padding: 5px;
   border-radius: 5px 0 0 5px;
   border-right: 2px solid #fff;
   display: flex;
@@ -15039,6 +15043,12 @@ body {
   background: #e52e2e;
   padding: 10px;
   border-radius: 5px;
+}
+.campaign-duration {
+  margin: 5px 0;
+  display: block;
+  padding-left: 5px;
+  font-size: 13px;
 }
 .custom-price .price.theme-money {
   color: #fff;
@@ -15068,7 +15078,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #e52e2e;
-  padding: 3px 6px 3px 15px;
+  padding: 3px 6px 3px 5px;
 }
 .custom-product-price .price-wrapper .money{
   font-size: 14px;
@@ -15738,6 +15748,7 @@ button#search_postcode {
     gap: 0;
     padding: 0;
     padding-right: 1px;
+    padding-left: 3px;
   }
   .product-block .custom-price .money {
     font-size: 11px;
@@ -15867,6 +15878,11 @@ button#search_postcode {
   }
 }
 @media(max-width:500px) {
+  .campaign-duration {
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 6px;
+  }
   .template-collection .collection-header {
     margin-top: 150px;
   }

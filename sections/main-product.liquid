@@ -374,6 +374,7 @@
                         <{{ heading_tag }} class="product-area__details__title product-detail__gap-sm h2" {{ block.shopify_attributes }}>
                           {{ product.title }}
                         </{{ heading_tag }}>
+                        <p class="product-size">{{ product.metafields.my_fields.farg }}</p>
                         <p class="product-size">{{ product.metafields.my_fields.storlek }}</p>
                       </div>
                       {% if product.metafields.custom.logo_product != blank%}
@@ -398,7 +399,8 @@
                                 <span class="campaign">{{ product.metafields.custom.campaign }}</span>
                               </div>
                             {% comment %} </div> {% endcomment %}
-                        </div>
+                      </div>
+                      <span class="campaign-duration">{{ product.metafields.custom.campaign_duration }}</span>
                       {% else %}
                       <div class="price no-compared">
                         <span class="theme-money">{%- render "price", product: product, price: cheapest_variant.compare_at_price -%}</span>

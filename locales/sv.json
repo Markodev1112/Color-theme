@@ -118,8 +118,8 @@
       "sale": "Kampanj"
     },
     "general": {
-      "include_taxes": "Inkl. moms",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a> räknas ut i kassan"
+      "include_taxes": "Fraktkostnaden",
+      "shipping_policy_html": "kan Ni beräkna i Kundvagnen"
     },
     "labels": {
       "only_x_left": "{{ quantity }} i lager",

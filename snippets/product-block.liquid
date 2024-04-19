@@ -237,6 +237,7 @@
               <span class="campaign">{{ product.metafields.custom.campaign }}</span>
             </div>
           </div>
+          <span class="campaign-duration">{{ product.metafields.custom.campaign_duration }}</span>
           {% else %}
           <div class="price no-compared">
             <span class="theme-money">{%- render "price", product: product, price: cheapest_variant.compare_at_price -%}</span>
